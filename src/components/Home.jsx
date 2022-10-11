@@ -43,8 +43,9 @@ const Home = () => {
         className="w-5/6 mx-auto mb-12 -mt-20 rounded-lg shadow-md lg:-mt-40 bg-gray-500"
       />
       <section className="text-gray-600 body-font mt-24 text-center max-w-7xl m-auto">
-            <h2 className="text-5xl font-black capitalize">Choose the topics as you like</h2>
-            <div className="container px-5 py-24 mx-auto">
+            <h2 className="text-5xl font-black capitalize pb-10 mb-7 quiz-title relative">Choose the topics as you like</h2>
+            <p className="font-bold text-bold text-center mb-5 max-w-2xl m-auto">A quiz is a form of game or mind sport in which players attempt to answer questions correctly about a certain or variety of subjects. Quizzes can be used as a brief assessment in education and similar fields to measure growth in knowledge, abilities, or skills. They can also be televised for entertainment purposes, often in a game show format.</p>
+            <div className="container px-5 py-5 pb-32 mx-auto">
                 <div className="grid grid-cols-4 gap-5">
                     {
                       qAllData.map(qData => <QuizCategory key={qData.id} qData={qData} />)

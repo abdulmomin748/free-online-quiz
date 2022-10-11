@@ -20,7 +20,7 @@ const QuizCategory = ({qData}) => {
                     </Link>
                     
                     <div className='flex items-center'>
-                        <span className='font-semibold text-xl mt-[-2px]'>{total}</span>
+                        <span className='font-semibold text-xl mt-[-1px]'>{total}</span>
                         <img className='w-[14px] text-gray-400' src={img} alt="" />
                     </div>
                 </div>

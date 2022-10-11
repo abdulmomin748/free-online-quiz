@@ -3,7 +3,7 @@
 }
 .quiz-title::after {
     position: absolute;
-    bottom: -18px;
+    bottom: 0;
     left: 50%;
     background-color: #ffb671;
     height: 7px;
@@ -21,6 +21,17 @@ body{
     max-width: 500px!important;
     width: 100%!important;
 }
+.recharts-legend-item{
+    margin-right: -58px!important;
+}
+
+
+
+
+
+
+
+
 /* [type="radio"]:checked,
 [type="radio"]:not(:checked) {
     position: absolute;
