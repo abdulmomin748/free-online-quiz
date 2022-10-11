@@ -2,7 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import DiplayQ from './DiplayQ';
 import './AllStyle.css'
-const Quize = () => {
+const LoadQuize = () => {
     const quizes = useLoaderData();
     const totalQuiz = quizes.data.questions;
     let quizSerial = 1;
@@ -19,4 +19,4 @@ const Quize = () => {
     );
 };
 
-export default Quize;
+export default LoadQuize;

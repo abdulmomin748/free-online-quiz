@@ -3,7 +3,7 @@ import About from "../components/About";
 import Blog from "../components/Blog";
 import ErrorPage from "../components/ErrorPage";
 import Home from "../components/Home";
-import Quize from "../components/LoadQuize";
+import LoadQuize from "../components/LoadQuize";
 import Root from "../components/Root";
 import Statistics from "../components/Statistics";
 import Topics from "../components/Topics";
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
             {
                 path: '/quiz/:id',
                 loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
-                element: <Quize />,
+                element: <LoadQuize />,
                 
             },
             {path: '/topics', element: <Topics />},
