@@ -1,15 +1,20 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import DiplayQ from './DiplayQ';
-
+import './AllStyle.css'
 const Quize = () => {
     const quizes = useLoaderData();
-    console.log(quizes);
+    const totalQuiz = quizes.data.questions;
+    let quizSerial = 1;
     return (
-        <div className='quiz-container max-w-5xl shadow-2xl mx-auto lg:my-32 p-5 rounded-md'>
-            {
-                quizes.data.questions.map(quizDis => <DiplayQ key={quizDis.id} quizDis={quizDis} />)
-            }
+        <div className='md:mt-20 lg:my-52 '>
+            <h1 className='text-3xl text-center font-bold  mb-20 text-gray-600 quiz-title relative'>Quiz Of {quizes.data.name}</h1>
+            <div className='quiz-container max-w-4xl mx-auto  rounded-md'>
+                {
+                    quizes.data.questions.map(quizDis => <DiplayQ key={quizDis.id} quizSerial={quizSerial++} quizDis={quizDis} />)
+                    
+                }
+            </div>
         </div>
     );
 };

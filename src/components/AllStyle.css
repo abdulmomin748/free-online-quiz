@@ -1,3 +1,20 @@
 .btn:hover svg{
     margin-right: -10px;
 }
+.quiz-title::after {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    background-color: #ffb671;
+    height: 7px;
+    content: '';
+    width: 100px;
+    transform: translateX(-50%);
+}
+body{
+    font-family: 'Oswald', sans-serif;
+}
+.eye-svg{
+    fill: #ffb671!important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');

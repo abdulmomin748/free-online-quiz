@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <section>
       <div className="bg-gray-100">
-        <div className="container flex flex-col items-center px-4 py-10 pb-24 mx-auto text-center lg:pb-56 md:py-20 md:px-10 lg:px-32 text-gray-900">
+        <div className="container flex flex-col items-center px-4 py-10 pb-24 mx-auto text-center lg:pb-56 md:py-40 md:px-10 lg:px-32 text-gray-900">
           <h1 className="text-5xl text-gray-600 font-bold leading-none sm:text-6xl xl:max-w-3xl">
             Welcome To Free Online Quize
           </h1>

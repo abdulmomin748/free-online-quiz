@@ -4,7 +4,7 @@ import Footer from './Footer';
 import Nav from './Nav'
 
 export const QuizDataContext = createContext([]);
-export const QuizCatContext = createContext();
+// export const QuizCatContext = createContext();
 
 const Root = () => {
     const quizData = useLoaderData();

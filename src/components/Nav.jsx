@@ -4,7 +4,8 @@ import logo from '../assets/logo.png'
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
-    <div className='px-4 py-5 mx-auto max-w-7xl sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
+    <div className='shadow-lg fixed top-0 left-0 right-0 z-10 bg-white'>
+      <div className='px-4 py-5 mx-auto max-w-7xl sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
       <div className='relative flex items-center justify-between'>
         <NavLink
           to='/'
@@ -23,7 +24,7 @@ const Nav = () => {
               to='/home'
               aria-label='Home'
               title='Home'
-              className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+              className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
               Home
             </NavLink>
@@ -33,7 +34,7 @@ const Nav = () => {
               to='/topics'
               aria-label='Shop'
               title='Shop'
-              className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+              className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
               Topics
             </NavLink>
@@ -43,7 +44,7 @@ const Nav = () => {
               to='/statistics'
               aria-label='Statistics'
               title='Statistics'
-              className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+              className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
               Statistics
             </NavLink>
@@ -53,7 +54,7 @@ const Nav = () => {
               to='/blog'
               aria-label='Blog'
               title='Blog'
-              className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+              className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
               Blog
             </NavLink>
@@ -63,7 +64,7 @@ const Nav = () => {
               to='/about'
               aria-label='Blog'
               title='Blog'
-              className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+              className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
               About
             </NavLink>
@@ -138,7 +139,7 @@ const Nav = () => {
                         to='/topics'
                         aria-label='Shop'
                         title='Shop'
-                        className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                        className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
                         Topics
                       </Link>
@@ -148,7 +149,7 @@ const Nav = () => {
                         to='/statistics'
                         aria-label='Cart'
                         title='Cart'
-                        className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                        className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
                         Statistics
                       </Link>
@@ -158,7 +159,7 @@ const Nav = () => {
                         to='/blog'
                         aria-label='About Us'
                         title='About Us'
-                        className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                        className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
                         Blog
                       </Link>
@@ -170,6 +171,7 @@ const Nav = () => {
           )}
         </div>
       </div>
+    </div>
     </div>
   )
 }
