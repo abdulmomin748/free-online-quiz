@@ -8,7 +8,7 @@ const QuizCategory = ({qData}) => {
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
             <img className="lg:h-48 md:h-36 w-full bg-gray-100" src={logo} alt="blog" />
             <div className="p-4">
-                <h3 className="title-font text-3xl font-medium text-gray-900 mb-3">{name}</h3>
+                <h3 className="title-font text-3xl font-bold text-gray-900 mb-3">{name}</h3>
                 <div className="flex items-center flex-wrap justify-between">
                     <Link to={`/quiz/${id}`}>
                         <button  className="text-cyan-400 btn font-semibold inline-flex items-center md:mb-2 lg:mb-0">Start Practice
