@@ -9,8 +9,8 @@ const Nav = () => {
       <div className='relative flex items-center justify-between'>
         <NavLink
           to='/'
-          aria-label='Smart Home'
-          title='Smart Home'
+          aria-label='Free Home Onlie'
+          title='Free Home Onlie'
           className='inline-flex items-center'
         >
           <img className='max-w-[50px]' src={logo} alt="" />
@@ -24,7 +24,11 @@ const Nav = () => {
               to='/home'
               aria-label='Home'
               title='Home'
-              className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+              className= {({isActive}) => isActive ?
+              'font-bold tracking-wide transition-all duration-5000 hover:text-deep-purple-accent-400 border-b-2 text-amber-500 border-b-amber-500 mb-3 pb-1'
+              : 
+              'font-bold tracking-wide text-gray-700 transition-all duration-5000  hover:text-amber-500 '
+              }
             >
               Home
             </NavLink>
@@ -32,9 +36,13 @@ const Nav = () => {
           <li>
             <NavLink
               to='/topics'
-              aria-label='Shop'
-              title='Shop'
-              className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+              aria-label='Topics'
+              title='Topics'
+              className= {({isActive}) => isActive ?
+              'font-bold tracking-wide transition-all duration-5000 hover:text-deep-purple-accent-400 border-b-2 text-amber-500 border-b-amber-500 mb-3 pb-1'
+              : 
+              'font-bold tracking-wide text-gray-700 transition-all duration-5000  hover:text-amber-500 '
+              }
             >
               Topics
             </NavLink>
@@ -44,7 +52,11 @@ const Nav = () => {
               to='/statistics'
               aria-label='Statistics'
               title='Statistics'
-              className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+              className= {({isActive}) => isActive ?
+              'font-bold tracking-wide transition-all duration-5000 hover:text-deep-purple-accent-400 border-b-2 text-amber-500 border-b-amber-500 mb-3 pb-1'
+              : 
+              'font-bold tracking-wide text-gray-700 transition-all duration-5000  hover:text-amber-500 '
+              }
             >
               Statistics
             </NavLink>
@@ -54,7 +66,11 @@ const Nav = () => {
               to='/blog'
               aria-label='Blog'
               title='Blog'
-              className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+              className= {({isActive}) => isActive ?
+              'font-bold tracking-wide transition-all duration-5000 hover:text-deep-purple-accent-400 border-b-2 text-amber-500 border-b-amber-500 mb-3 pb-1'
+              : 
+              'font-bold tracking-wide text-gray-700 transition-all duration-5000  hover:text-amber-500 '
+              }
             >
               Blog
             </NavLink>
@@ -62,9 +78,13 @@ const Nav = () => {
           <li>
             <NavLink
               to='/about'
-              aria-label='Blog'
-              title='Blog'
-              className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+              aria-label='About'
+              title='About'
+              className= {({isActive}) => isActive ?
+              'font-bold tracking-wide transition-all duration-5000 hover:text-deep-purple-accent-400 border-b-2 text-amber-500 border-b-amber-500 mb-3 pb-1'
+              : 
+              'font-bold tracking-wide text-gray-700 transition-all duration-5000  hover:text-amber-500 '
+              }
             >
               About
             </NavLink>
@@ -99,8 +119,8 @@ const Nav = () => {
                   <div>
                     <Link
                       to='/'
-                      aria-label='Company'
-                      title='Company'
+                      aria-label='Home'
+                      title='Home'
                       className='inline-flex items-center'
                     >
                       <svg
@@ -137,8 +157,8 @@ const Nav = () => {
                     <li>
                       <Link
                         to='/topics'
-                        aria-label='Shop'
-                        title='Shop'
+                        aria-label='Topics'
+                        title='Topics'
                         className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
                         Topics
@@ -147,7 +167,7 @@ const Nav = () => {
                     <li>
                       <Link
                         to='/statistics'
-                        aria-label='Cart'
+                        aria-label='Statistics'
                         title='Cart'
                         className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
@@ -157,8 +177,8 @@ const Nav = () => {
                     <li>
                       <Link
                         to='/blog'
-                        aria-label='About Us'
-                        title='About Us'
+                        aria-label='Blog'
+                        title='Blog'
                         className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
                         Blog

@@ -12,7 +12,7 @@ const DisplayChart = ({total}) => {
                 <Tooltip />
             </LineChart> */}
 
-            <BarChart className='mb-16' width={730} height={350} data={[total]}>
+            <BarChart className='mb-10' width={730} height={350} data={[total]}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
                 <YAxis />

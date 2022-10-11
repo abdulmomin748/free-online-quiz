@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className='bg-gray-100 text-gray-900  md:pt-32'>
       <div className='container flex flex-col items-center p-4 mx-auto md:p-8'>
-        <h1 className='text-3xl font-bold leading-none text-center sm:text-4xl'>
+        <h1 className='text-3xl font-bold relative mb-10 quiz-title pb-5 leading-none text-center sm:text-4xl'>
           Help Center
         </h1>
         <div className='relative mt-6 mb-12'>
