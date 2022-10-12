@@ -6,7 +6,7 @@ const QuizCategory = ({qData}) => {
     return (
         <div className="text-left">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <img className="lg:h-48 md:h-36 w-full bg-gray-100" src={logo} alt="blog" />
+            <img className="Clg:h-48 lg:h-56 md:h-60 sm:h-54 w-full bg-gray-100" src={logo} alt="blog" />
             <div className="p-4">
                 <h3 className="title-font text-3xl font-bold text-gray-900 mb-3">{name}</h3>
                 <div className="flex items-center flex-wrap justify-between">
@@ -20,7 +20,7 @@ const QuizCategory = ({qData}) => {
                     </Link>
                     
                     <div className='flex items-center'>
-                        <span className='font-semibold text-xl mt-[-1px]'>{total}</span>
+                        <span className='font-semibold text-3xl mt-[-1px]'>{total}</span>
                         <img className='w-[14px] text-gray-400' src={img} alt="" />
                     </div>
                 </div>

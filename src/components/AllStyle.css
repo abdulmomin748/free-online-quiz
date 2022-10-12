@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 .btn:hover svg{
     margin-right: -10px;
 }
@@ -12,7 +13,8 @@
     transform: translateX(-50%);
 }
 body{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Josefin Sans', sans-serif!important;
+    font-size: 18px!important;
 }
 .eye-svg{
     fill: #ffb671!important;
@@ -24,62 +26,24 @@ body{
 .recharts-legend-item{
     margin-right: -58px!important;
 }
-
-
-
-
-
-
-
-
-/* [type="radio"]:checked,
-[type="radio"]:not(:checked) {
-    position: absolute;
-    left: -9999px;
+.font-sans{
+    font-family: 'Josefin Sans', sans-serif!important;
 }
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label
-{
-    position: relative;
-    padding-left: 28px;
-    cursor: pointer;
-    line-height: 20px;
-    display: inline-block;
-    color: #666;
+
+@media screen and (max-width: 768px) {
+    body{
+        padding: 0 20px;
+    }
+    .banner-sec{
+        margin-left: -20px;
+        margin-right: -20px;
+    }
 }
-[type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 18px;
-    height: 18px;
-    border: 1px solid #ddd;
-    border-radius: 100%;
-    background: #fff;
+
+@media screen and (max-width: 640px) {
+    .Cgrid{
+        max-width: 400px;
+        width: 100%;
+
+    }
 }
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
-    content: '';
-    width: 12px;
-    height: 12px;
-    background: #F87DA9;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    border-radius: 100%;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-[type="radio"]:not(:checked) + label:after {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-}
-[type="radio"]:checked + label:after {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-} */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');

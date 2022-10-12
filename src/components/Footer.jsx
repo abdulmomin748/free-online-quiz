@@ -4,7 +4,7 @@ import logo from '../assets/logo.png'
 const Footer = () => {
   return (
     <footer className='divide-y border-solid border-t-2 border-gray-100'>
-      <div className='container flex flex-col max-w-7xl	 justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0'>
+      <div className='flex flex-col max-w-7xl md:px-4	justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0'>
         <div className='lg:w-1/3'>
           <Link className='flex justify-center space-x-3 lg:justify-start'>
             <div className='flex items-center justify-center w-12 h-12 rounded-full bg-cyan-200'>
@@ -106,7 +106,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='py-6 text-sm text-center text-gray-400'>
+      <div className='py-6 text-sm text-center text-gray-600'>
         © 2022 Free Online Quiz. All rights reserved.
       </div>
     </footer>
