@@ -5,7 +5,7 @@ import { QuizDataContext } from './Root';
 const Statistics = () => {
     const quizData = useContext(QuizDataContext);
     return (
-        <div className='md:pt-36 flex justify-center flex-col max-w-[730px] m-auto'>
+        <div className='md:pt-36 pt-36 flex justify-center flex-col w-full max-w-[730px] m-auto'>
             <h1 className="text-3xl text-gray-600 font-bold relative mb-10 quiz-title pb-5 leading-none text-center sm:text-4xl">
                 Quiz Summary
             </h1>

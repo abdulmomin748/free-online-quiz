@@ -47,3 +47,9 @@ body{
 
     }
 }
+
+@media screen and (max-width: 899px) {
+    .navlink{
+        display: none!important;
+    }
+}
