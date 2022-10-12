@@ -1,10 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import {Helmet} from "react-helmet";
 const About = () => {
   return (
     <section className='bg-gray-100 text-gray-900  md:pt-32'>
-      <div className='container flex flex-col items-center p-4 mx-auto md:p-8'>
+      <Helmet>
+            <title>F About</title>
+            <meta name="description" content="Helmet application" />
+        </Helmet>
+      <div className='container flex flex-col items-center p-4 mx-auto md:p-8 pt-32'>
         <h1 className='text-3xl text-gray-600 font-bold relative mb-10 quiz-title pb-5 leading-none text-center sm:text-4xl'>
           Help Center
         </h1>

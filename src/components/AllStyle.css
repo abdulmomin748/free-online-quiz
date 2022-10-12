@@ -29,7 +29,18 @@ body{
 .font-sans{
     font-family: 'Josefin Sans', sans-serif!important;
 }
-
+.question {
+    width: 700px;
+    height: 500px;
+  }
+  
+  .question-container {
+    width: 100%;
+    height: 100%;
+  }
+  .topics-sec{
+    padding-top: 80px!important;
+  }
 @media screen and (max-width: 768px) {
     body{
         padding: 0 20px;
@@ -37,6 +48,12 @@ body{
     .banner-sec{
         margin-left: -20px;
         margin-right: -20px;
+    }
+    .topics-sec {
+        padding-top: 131px!important;
+    }
+    .option-cntlr{
+        grid-template-columns: repeat(1, 1fr)!important;
     }
 }
 
@@ -46,10 +63,17 @@ body{
         width: 100%;
 
     }
+    
 }
 
 @media screen and (max-width: 899px) {
     .navlink{
         display: none!important;
+    }
+}
+@media screen and (max-width: 420px) {
+    .question {
+        width: 299px;
+        height: 248px;
     }
 }

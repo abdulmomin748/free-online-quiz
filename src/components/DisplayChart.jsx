@@ -1,18 +1,23 @@
 import React from 'react';
-import { BarChart,Bar, Legend, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
+import { ResponsiveContainer,LineChart,BarChart,Bar, Legend,AreaChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
 const DisplayChart = ({total}) => {
     console.log([total]);
     return (
         <>
-            <BarChart className='mb-10' width={730} height={350} data={[total]}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="total" fill="#8884d8" />
-            </BarChart>
-
+            <div className='question'>
+                <div className='question-container'>
+                    <ResponsiveContainer width="100%" height='80%'>
+                        <BarChart className='mb-10' data={[total]}>
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="name" />
+                            <YAxis />
+                            <Tooltip />
+                            <Legend />
+                            <Bar dataKey="total" fill="#8884d8" />
+                        </BarChart>
+                    </ResponsiveContainer>  
+                </div>
+            </div>
         </>
     );
 };

@@ -5,13 +5,18 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
+import {Helmet} from "react-helmet";
 const Blog = () => {
     const [open, setOpen] = useState(1);
     const handleOpen = (value) => {
         setOpen(open === value ? 0 : value);
     };
     return (
-        <section className="md:pt-36 flex justify-center flex-col max-w-[730px] m-auto text-center">
+        <section className="md:pt-36 pt-32 flex justify-center flex-col max-w-[730px] m-auto text-center">
+            <Helmet>
+            <title>F Blog</title>
+            <meta name="description" content="Helmet application" />
+        </Helmet>
             <h1 className="text-3xl text-gray-600 font-bold relative mb-5 quiz-title pb-5 leading-none text-center sm:text-4xl">
                 Question
             </h1>

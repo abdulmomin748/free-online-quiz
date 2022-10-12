@@ -3,13 +3,17 @@ import { Link, useLoaderData } from "react-router-dom";
 import heroImg from "../assets/heroImg.jpg";
 import QuizCategory from "./QuizCategory";
 import { QuizDataContext } from "./Root";
-
+import {Helmet} from "react-helmet";
 const Home = () => {
   const quizData = useContext(QuizDataContext);
   const qAllData = quizData.data;
   console.log(quizData);
   return (
     <section>
+      <Helmet>
+        <title>F Home</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <div className="bg-gray-100 banner-sec">
         <div className="container flex flex-col items-center px-4 pb-24 mx-auto text-center lg:pb-56 md:py-32 lg:py-40 py-32 md:px-10 lg:px-32 text-gray-900">
           <h1 className="text-3xl lg:text-5xl sm:text-2xl md:text-3xl text-gray-600 font-bold leading-none xl:max-w-3xl">

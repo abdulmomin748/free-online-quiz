@@ -14,7 +14,7 @@ const Nav = () => {
           className='inline-flex items-center'
         >
           <img className='max-w-[50px]' src={logo} alt="" />
-          <span className='ml-2 text-[16px] -mt-3 font-bold tracking-wide text-gray-800 uppercase'>
+          <span className='ml-2 text-[16px] mt-1 font-bold tracking-wide text-gray-800 uppercase'>
             Free Online Quiz
           </span>
         </NavLink>

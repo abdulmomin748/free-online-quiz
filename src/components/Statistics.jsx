@@ -1,11 +1,15 @@
 import React, { useContext } from 'react';
 import DisplayChart from './DisplayChart';
 import { QuizDataContext } from './Root';
-
+import {Helmet} from "react-helmet";
 const Statistics = () => {
     const quizData = useContext(QuizDataContext);
     return (
         <div className='md:pt-36 pt-36 flex justify-center flex-col w-full max-w-[730px] m-auto'>
+            <Helmet>
+            <title>F Statistics</title>
+            <meta name="description" content="Helmet application" />
+            </Helmet>
             <h1 className="text-3xl text-gray-600 font-bold relative mb-10 quiz-title pb-5 leading-none text-center sm:text-4xl">
                 Quiz Summary
             </h1>

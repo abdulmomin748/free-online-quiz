@@ -1,11 +1,10 @@
-import React, { useContext } from 'react';
 import Option from './Option';
 import {  toast } from 'react-toastify';
 const DiplayQ = ({quizDis,quizSerial}) => {
     const {correctAnswer, id, options, question } = quizDis;
     
     const hanldleQuizAns = value => {
-        if(value == correctAnswer){
+        if(value === correctAnswer){
             toast.success('Your Answer Is Correct',{autoClose: 500,closeOnClick: false, toastId:'correct'})
         }else{
             toast.warn('Your Answer Is Incorrect',{autoClose: 500,closeOnClick: false, toastId:'incorrect'})
@@ -32,7 +31,7 @@ const DiplayQ = ({quizDis,quizSerial}) => {
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg></butto>
             </div>
-            <div className='grid grid-cols-2 gap-2'>
+            <div className='grid grid-cols-2 gap-2 option-cntlr'>
                 {
                     options.map(uniqOption => <Option quizDis={quizDis} hanldleQuizAns={hanldleQuizAns} uniqOption={uniqOption} />)
                 }
