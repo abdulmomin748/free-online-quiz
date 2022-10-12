@@ -1,14 +1,32 @@
 import Option from './Option';
 import {  toast } from 'react-toastify';
-const DiplayQ = ({quizDis,quizSerial}) => {
+import React, { useState } from 'react';
+const DiplayQ = ({quizDis,quizSerial,handleCQuantity, handleWQuantity}) => {
     const {correctAnswer, id, options, question } = quizDis;
-    
+
+    const [cTotal, setCTotal] = useState(0);
+    const handleCorrectTotal = () => {
+        setCTotal(cTotal + 1);
+    }
+
+    const [wrong, setWrong] = useState(0);
+    const handleWrongTotal = () => {
+        setWrong(wrong + 1);
+    }
+
     const hanldleQuizAns = value => {
-        if(value === correctAnswer){
-            toast.success('Your Answer Is Correct',{autoClose: 500,closeOnClick: false, toastId:'correct'})
-        }else{
-            toast.warn('Your Answer Is Incorrect',{autoClose: 500,closeOnClick: false, toastId:'incorrect'})
-        }
+
+            if(value === correctAnswer){
+                toast.success('Your Answer Is Correct',{autoClose: 500,closeOnClick: false, toastId:'correct'})
+                handleCQuantity()
+                handleCorrectTotal()
+            }else{
+                toast.warn('Your Answer Is Incorrect',{autoClose: 500,closeOnClick: false, toastId:'incorrect'})
+                handleWQuantity()
+                handleWrongTotal()
+            }
+        
+        
     }
 
 
@@ -16,6 +34,7 @@ const DiplayQ = ({quizDis,quizSerial}) => {
         toast.success(`Correct Answer is: ${correctAnswer}`,{autoClose: 2500,closeOnClick: false,toastId: 'Answer'})
     }
 
+    
     return (
         
         <div className='shadow-2xl rounded-md p-5 mb-12'>
@@ -26,10 +45,10 @@ const DiplayQ = ({quizDis,quizSerial}) => {
                         question.slice(3,-4)
                     }
                 </div>
-                <butto title='Show Correct Answser' className='w-10 flex justify-end cursor-pointer h-10 items-center' onClick={() => handleCorrectAns()}><svg className='eye-svg' xmlns="http://www.w3.org/2000/svg" fill="#ffb671" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <button title='Show Correct Answser' className='w-10 flex justify-end cursor-pointer h-10 items-center' onClick={() => handleCorrectAns()}><svg className='eye-svg' xmlns="http://www.w3.org/2000/svg" fill="#ffb671" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg></butto>
+                </svg></button>
             </div>
             <div className='grid grid-cols-2 gap-2 option-cntlr'>
                 {

@@ -5,6 +5,7 @@ const QuizCategory = ({qData}) => {
     const {id, name, logo, total} = qData;
     return (
         <div className="text-left">
+            
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
             <img className="Clg:h-48 lg:h-56 md:h-60 sm:h-54 w-full bg-gray-100" src={logo} alt="blog" />
             <div className="p-4">
