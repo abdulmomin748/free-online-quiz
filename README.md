@@ -1,6 +1,5 @@
-# b6-quiz-crackerz-abdulmomin748
-
-## Project Name: Free Online Quize
+# Project Name: Free Online Quize
+## Live Link: 
 
 
 
