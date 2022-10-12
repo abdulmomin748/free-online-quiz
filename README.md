@@ -1,5 +1,5 @@
 # Project Name: Free Online Quize
-## Live Link: https://freeonlinequiz.netlify.app/
+## Live Site Link: https://freeonlinequiz.netlify.app/
 
 ### Simple build for production
 * $ npm run build
