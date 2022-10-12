@@ -4,7 +4,6 @@ import DiplayQ from './DiplayQ';
 import './AllStyle.css'
 const LoadQuize = () => {
     const quizes = useLoaderData();
-    const totalQuiz = quizes.data.questions;
     let quizSerial = 1;
     return (
         <div className='md:mt-32 lg:my-40 mt-32'>
