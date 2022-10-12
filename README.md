@@ -1,3 +1,6 @@
 # b6-quiz-crackerz-abdulmomin748
-b6-quiz-crackerz-abdulmomin748 created by GitHub Classroom
-PROJECT BLAH BLAH
+
+Project Name: Free Online Quize
+Live Website Link: 
+
+
