@@ -1,7 +1,7 @@
 import React from 'react';
 import { ResponsiveContainer,LineChart,BarChart,Bar, Legend,AreaChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
 const DisplayChart = ({total}) => {
-    console.log([total]);
+    // console.log([total]);
     return (
         <>
             <div className='question'>

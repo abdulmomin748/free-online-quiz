@@ -7,7 +7,6 @@ import {Helmet} from "react-helmet";
 const Home = () => {
   const quizData = useContext(QuizDataContext);
   const qAllData = quizData.data;
-  console.log(quizData);
   return (
     <section>
       <Helmet>

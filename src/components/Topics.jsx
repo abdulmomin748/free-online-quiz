@@ -7,7 +7,6 @@ import {Helmet} from "react-helmet";
 const Topics = () => {
   const quizData = useContext(QuizDataContext);
   const qAllData = quizData.data;
-  console.log(quizData);
   return (
     
       <section className="topics-sec text-gray-600 body-font lg:mt-24  md:mt-16 text-center max-w-7xl m-auto">

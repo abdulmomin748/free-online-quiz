@@ -17,7 +17,6 @@ const LoadQuize = () => {
     }
 
 
-    console.log(answer);
     return (
         <div className='md:mt-32 lg:my-40 mt-32 m-auto max-w-7xl text-center'>
             <div className="extraWork max-w-[700px] shadow-2xl left-0 fixed bg-[#f4f4f4] font-bold text-2xl p-5 z-50 top-50">
