@@ -1,5 +1,5 @@
 # Project Name: Free Online Quize
-## Live Link: https://chipper-pothos-2711f9.netlify.app/
+## Live Link: https://freeonlinequiz.netlify.app/
 
 ### Simple build for production
 * $ npm run build
